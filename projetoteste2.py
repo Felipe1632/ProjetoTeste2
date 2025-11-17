@@ -6,6 +6,7 @@ df = pd.read_csv('feedbacks.csv', sep=',', encoding='utf-8')
 print(df, "\n")
 
 
+
 # 2 - Média por curso
 media_por_curso = df.groupby("curso")["nota"].mean().reset_index()
 print("Média das notas por curso:")
